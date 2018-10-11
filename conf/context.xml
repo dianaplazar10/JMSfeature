@@ -1,0 +1,4 @@
+<ResourceLink global="jms/ConnectionFactory" name="jms/ConnectionFactory" type="javax.jms.ConnectionFactory">
+<ResourceLink global="jms/topic/ITExpertsTopic" name="jms/topic/ITExpertsTopic" type="javax.jms.Topic"/>
+<ResourceLink global="jms/queue/ITExpertsQueue" name="jms/queue/ITExpertsQueue" type="javax.jms.Queue"/>
+</ResourceLink>

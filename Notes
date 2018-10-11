@@ -1,0 +1,15 @@
+reference:
+
+1)https://itexpertsconsultant.wordpress.com/2016/01/25/how-to-implement-jms-with-tomcat-durable-subscription-example/
+ - conf>>context.xml
+ - content>>server.xml
+ - update pom/xml with dependency contents
+ - Next, We need to add ActiveMQ props into tomcat class path: by using the below command:
+    set JAVA_OPTS=-Dwebconsole.type=properties -Dwebconsole.jms.url=”tcp://localhost:61617″ -Dwebconsole.jmx.url=”service:jmx:rmi:///jndi/rmi://localhost:1099/ jmxrmi”
+ - create 2 class, MessageProducerClient.java and  MessageReceiverClient.java
+ - Compile and run these two Java files separately in two command prompt.
+ 
+ 
+ 2)https://tutorialseye.com/jms-enterprise-messaging-systems.html
+  - MessageConsumer.java
+  - MessageProducer.java

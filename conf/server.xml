@@ -1,0 +1,17 @@
+<GlobalNamingResources>
+ <Resource name="ConnectionFactory" auth="Container"
+ type="org.apache.activemq.ActiveMQConnectionFactory" description="JMS
+ Connection Factory " factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+ brokerurl="tcp://localhost:61617"
+ brokerName="ActiveMQBroker"
+ useEmbeddedBroker="false"/>
+
+ <Resource name="jms/topic/ITExpertsTopic" auth="Container"
+ type="org.apache.activemq.command.ActiveMQTopic" factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+ physicalName="APP.JMS.TOPIC" />
+
+ <Resource name="jms/queue/ITExpertsQueue" auth="Container"
+ type="org.apache.activemq.command.ActiveMQQueue" factory="org.apache.activemq.jndi.JNDIReferenceFactory"
+ physicalName=" APP.JMS.QUEUE" />
+
+ </GlobalNamingResources>
